@@ -19,3 +19,8 @@ but it is rather convoluted, whereas redux works from the get-go.
 It should be noted however, that when Next.js static site generator or server side rendering is involved or App.getInitialProps is used, things start to get complicated as another store instance is needed on the server to render Redux-connected components. Rerendering of components that have not changed can happen!
 
 The solution is adding next-redux-wrapper (coming up shortly)
+
+#Getting Started
+
+1. Install dependencies yarn install or npm install
+2. Run the dev server yarn dev or npm run dev
