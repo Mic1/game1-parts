@@ -1,3 +1,7 @@
+# Vercel: https://game1-parts-68enmj2oy-mic3.vercel.app/
+
+# Netlify: https://flourishing-tartufo-4b37b9.netlify.app/
+
 # The Power And Elegance of Redux-Toolkit + Sagas
 
 Thunks are cool, Sagas are much cooler.
