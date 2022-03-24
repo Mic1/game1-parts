@@ -24,3 +24,12 @@ The solution is adding next-redux-wrapper (coming up shortly)
 
 1. Install dependencies yarn install or npm install
 2. Run the dev server yarn dev or npm run dev
+
+#Inside The App - looking at the web console
+
+The redux store has the redux-logger middleware installed and there are
+many trace messages e.g. toggling one of the parm toggles such as
+"easy" shows the dispatched action and state information.
+
+If the Redux Dev Tools are installed in the browser - actions,
+payloads and state can all be monitored. THe sagas can be seen watching actions and dispatching their own actions in response.
