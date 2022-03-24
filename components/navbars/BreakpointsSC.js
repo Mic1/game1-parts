@@ -16,7 +16,7 @@ const Container = tw.div`
   sm:bg-pink-500
   md:bg-orange-500
   lg:bg-green-500
-  xl:bg-blue-500
+  xl:bg-indigo-700
 `
 
 const Al = tw.div`

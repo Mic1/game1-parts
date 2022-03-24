@@ -10,6 +10,7 @@
     "@reduxjs/toolkit": "^1.8.0",
     "@types/redux-logger": "^3.0.9",
     "axios": "^0.26.0",
+    "daisyui": "^2.11.1",
     "mongodb": "^4.4.1",
     "next": "latest",
     "react": "^17.0.2",
