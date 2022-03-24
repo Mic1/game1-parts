@@ -8,7 +8,8 @@ const namespace = 'game'
 export const fetchGameData = createAsyncThunk(
   `${namespace}/fetchGameData`,
   async () => {
-    const { data } = await axios.get(`${API_URL}/game.json`)
+    const { data } = await axios.get('/game.json')
+    // const { data } = await axios.get(`${API_URL}/game.json`)
     console.log('asyncData: ', data)
     return data
   }
