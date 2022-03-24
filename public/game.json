@@ -1,0 +1,119 @@
+[
+  {
+    "title": "Game 3159 initiated by Blacke Hawke",
+    "description":
+      "Review, change settings and reorder players in your game.",
+    "game": [
+      {
+        "player_id": 1,
+        "imageUrl":
+          "https://robohash.org/4?set=set2&size=180x180",
+        "imageCopy":"https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        "gamesPlayed": 12345,
+        "beds": 3,
+        "baths": 2,
+        "title": "R2D2",
+        "price": 190000,
+        "reviewCount": 34,
+        "rating": 4,
+        "ratingDetail": [
+          { "category": "Overall", "starNum": 5, "rating": 4, "reviews" : 49, "starColor": "text-teal-500" }
+        ],
+        "parms": {
+          "all": {"value":true, "desc": "selects from all words"},
+          "easy": {"value":false, "desc": "selects easy words"},
+          "medium": {"value":false, "desc": "selects medium words"},
+          "hard": {"value":false, "desc": "selects hard words"}
+        }
+      },
+      {
+        "player_id": 2,
+        "imageCopy":
+          "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        "imageUrl":"https://robohash.org/3?set=set2&size=180x180",
+        "gamesPlayed": 12345,
+        "beds": 4,
+        "baths": 1,
+        "title": "SkyNet",
+        "price": 175000,
+        "reviewCount": 12,
+        "rating": 3,
+        "ratingDetail": [
+          { "category": "Overall", "starNum": 5, "rating": 5, "reviews" : 99, "starColor": "text-teal-500" }
+        ],
+        "parms": {
+          "all": {"value":true, "desc": "selects from all words"},
+          "easy": {"value":false, "desc": "selects easy words"},
+          "medium": {"value":false, "desc": "selects medium words"},
+          "hard": {"value":false, "desc": "selects hard words"}
+        }
+      },
+      {
+        "player_id": 3,
+        "imageUrl":"https://robohash.org/1?set=set2&size=180x180",
+        "imageCopy":
+          "https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80",
+        "gamesPlayed": 12345,
+        "beds": 5,
+        "baths": 4,
+        "title": "HAL9000",
+        "price": 200000,
+        "reviewCount": 54,
+        "rating": 5,
+        "ratingDetail": [
+          { "category": "Overall", "starNum": 5, "rating": 5, "reviews" : 34, "starColor": "text-teal-500" }
+        ],
+        "parms": {
+          "all": {"value":true, "desc": "selects from all words"},
+          "easy": {"value":false, "desc": "selects easy words"},
+          "medium": {"value":false, "desc": "selects medium words"},
+          "hard": {"value":false, "desc": "selects hard words"}
+        }
+      },
+      {
+        "player_id": 4,
+        "imageUrl":"https://robohash.org/2?set=set2&size=180x180",
+        "imageCopy":
+          "https://images.unsplash.com/photo-1505691938895-1758d7feb511?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        "gamesPlayed": 12345,
+        "beds": 3,
+        "baths": 2,
+        "title": "DeepThought",
+        "price": 115000,
+        "reviewCount": 34,
+        "rating": 4,
+        "ratingDetail": [
+          { "category": "Overall", "starNum": 5, "rating": 5, "reviews" : 220, "starColor": "text-red-500" }
+        ],
+        "parms": {
+          "all": {"value":true, "desc": "selects from all words"},
+          "easy": {"value":false, "desc": "selects easy words"},
+          "medium": {"value":false, "desc": "selects medium words"},
+          "hard": {"value":false, "desc": "selects hard words"}
+        }
+      },
+      {
+        "player_id": 51,
+        "imageUrl":"/images/witch.png",
+        "imageCopy":
+          "https://images.unsplash.com/photo-1505691938895-1758d7feb511?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        "beds": 3,
+        "gamesPlayed": 12345,
+        "baths": 2,
+        "title": "TheWitch",
+        "price": 115000,
+        "reviewCount": 34,
+        "rating": 4,
+        "ratingDetail": [
+          { "category": "Overall", "starNum": 5, "rating": 5, "reviews" : 220, "starColor": "text-red-500" }
+        ],
+        "parms": {
+          "all": {"value":true, "desc": "selects from all words"},
+          "easy": {"value":false, "desc": "selects easy words"},
+          "medium": {"value":false, "desc": "selects medium words"},
+          "hard": {"value":false, "desc": "selects hard words"}
+        }
+      }
+    ]
+  }
+]

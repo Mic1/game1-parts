@@ -1,27 +1,21 @@
-# Next.js + Tailwind CSS Example
+# The Power And Elegance of Redux-Toolkit + Sagas
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+Thunks are cool, Sagas are much cooler.
 
-## Preview
+## Settings Page
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+Reordering the Players: the MoveUp and MoveDown buttons on the cards dispatch
+a "reorderPlayers" action with the card's current position and direction of move.
+The action is retrieved by the redux GameSlice.reducer.reorderPlayers which reorders
+the players and writes the new order to global state, which automatically retriggers
+a rerender of the cards in their new order. Meanwhile the saga GameSaga is watching
+for the "reorderPlayers" action with GameSaga.watchReorderPlayers. Once the GameSlice reducer has finished processing the action, the saga intercepts the action and dispatches another action "testSagaReorder" that GameSlice.reducer.testSagaReorder processes by incrementing counter testSagaReorder in global state, which is rerendered in the counter on the Settings Page!
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+The combination of redux and sagas is the optimum solution for react state management,
+specifically because the built-in react solution using Context appears to cause excessive
+rendering of child components. useMemo and useCallback are "patches" to try and fix this,
+but it is rather convoluted, whereas redux works from the get-go.
 
-## Deploy your own
+It should be noted however, that when Next.js static site generator or server side rendering is involved or App.getInitialProps is used, things start to get complicated as another store instance is needed on the server to render Redux-connected components. Rerendering of components that have not changed can happen!
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
-
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+The solution is adding next-redux-wrapper (coming up shortly)
