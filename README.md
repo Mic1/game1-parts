@@ -1,4 +1,4 @@
-# Vercel: https://game1-parts-twmkpzx8u-mic3.vercel.app/
+# Vercel: https://game1-parts.vercel.app/
 
 # Netlify: https://flourishing-tartufo-4b37b9.netlify.app/
 
