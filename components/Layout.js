@@ -8,12 +8,12 @@ import { Fragment, useState, useEffect } from 'react'
 import Head from 'next/head'
 import Navbar from '../components/navbars/Navbar1'
 import Footer from '../components/widgets/Footer'
-// import VertButtonBar from './header/VertButtonBar'
 import { useSelector } from 'react-redux'
-// import { handleGetPlayerSels } from '../redux/sagas/handlers/player'
+
+import { appData } from '../data/appData'
 
 const Layout = (props) => {
-  console.log('Render Layout: ')
+  console.log('Render Layout: ', appData.links)
 
   const [navOpen, setNavOpen] = useState(false)
   const [scrolledFromTop, setScrolledFromTop] = useState(false)
@@ -30,7 +30,7 @@ const Layout = (props) => {
   }
 
   const handleNav = (data) => {
-    console.log('Layout.handleNav')
+    // console.log('Layout.handleNav')
     setNavOpen(data)
   }
 
@@ -49,6 +49,7 @@ const Layout = (props) => {
         className={`bg-white ${navOpen ? 'overflow-hidden' : 'overflow-auto'}`}
       >
         <Navbar
+          data={appData.links}
           navOpen={navOpen}
           handleNav={handleNav}
           scrolledFromTop={scrolledFromTop}
@@ -60,5 +61,5 @@ const Layout = (props) => {
   )
 }
 
-// there is no reason for the red squiggly error that I can see!
+/* there is no reason for the red squiggly error that I can see! */
 export default Layout

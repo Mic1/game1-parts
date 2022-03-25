@@ -15,6 +15,16 @@ export const fetchGameData = createAsyncThunk(
   }
 )
 
+export const fetchLinkData = createAsyncThunk(
+  `${namespace}/fetchLinkData`,
+  async () => {
+    const { data } = await axios.get('/link.json')
+    // const { data } = await axios.get(`${API_URL}/game.json`)
+    console.log('asyncData: ', data)
+    return data
+  }
+)
+
 export const gameSlice = createSlice({
   name: namespace,
   initialState: {
@@ -60,6 +70,7 @@ export const gameSlice = createSlice({
       console.log('GameSlice.testSagaReorder')
       state.testSagaReorder = state.testSagaReorder + 1
     },
+    getlinkData: (state) => {},
   },
   extraReducers: {
     [fetchGameData.pending]: (state, action) => {

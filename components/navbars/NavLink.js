@@ -40,7 +40,7 @@ function NavLink({
   handleNav,
   currLink,
 }) {
-  console.log('NavLink')
+  // console.log('NavLink')
   return (
     <Link href={route} exact={exact}>
       <LinkContainer

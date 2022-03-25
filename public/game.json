@@ -10,10 +10,7 @@
           "https://robohash.org/4?set=set2&size=180x180",
         "imageCopy":"https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
         "gamesPlayed": 12345,
-        "beds": 3,
-        "baths": 2,
         "title": "R2D2",
-        "price": 190000,
         "reviewCount": 34,
         "rating": 4,
         "ratingDetail": [
@@ -32,10 +29,7 @@
           "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
         "imageUrl":"https://robohash.org/3?set=set2&size=180x180",
         "gamesPlayed": 12345,
-        "beds": 4,
-        "baths": 1,
         "title": "SkyNet",
-        "price": 175000,
         "reviewCount": 12,
         "rating": 3,
         "ratingDetail": [
@@ -54,10 +48,7 @@
         "imageCopy":
           "https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80",
         "gamesPlayed": 12345,
-        "beds": 5,
-        "baths": 4,
         "title": "HAL9000",
-        "price": 200000,
         "reviewCount": 54,
         "rating": 5,
         "ratingDetail": [
@@ -76,10 +67,7 @@
         "imageCopy":
           "https://images.unsplash.com/photo-1505691938895-1758d7feb511?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
         "gamesPlayed": 12345,
-        "beds": 3,
-        "baths": 2,
         "title": "DeepThought",
-        "price": 115000,
         "reviewCount": 34,
         "rating": 4,
         "ratingDetail": [
@@ -97,11 +85,8 @@
         "imageUrl":"/images/witch.png",
         "imageCopy":
           "https://images.unsplash.com/photo-1505691938895-1758d7feb511?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-        "beds": 3,
         "gamesPlayed": 12345,
-        "baths": 2,
         "title": "TheWitch",
-        "price": 115000,
         "reviewCount": 34,
         "rating": 4,
         "ratingDetail": [

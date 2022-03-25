@@ -3,7 +3,7 @@
     "title": "Game 3159 initiated by Blacke Hawke",
     "description":
       "Review, change settings and reorder players in your game.",
-    "players": [
+    "game": [
       {
         "player_id": 1,
         "imageUrl":

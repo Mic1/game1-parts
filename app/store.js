@@ -8,8 +8,6 @@ import gameReducer from '../features/game/gameSlice'
 
 const sagaMiddleware = createSagaMiddleware()
 
-// console.log("ws: ", root);
-
 const store = configureStore({
   reducer: {
     appFlags: appflagsReducer,

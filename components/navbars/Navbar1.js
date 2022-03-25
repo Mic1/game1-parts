@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import Link from 'next/link'
+import { Fragment, useState } from 'react'
+
 import tw from 'tailwind-styled-components'
 
 import BreakpointsSC from './BreakpointsSC'
@@ -38,7 +38,7 @@ const Logo = tw.div`
   md:justify-start
 `
 
-const LogoContents = tw.a`
+const LogoContents = tw.h1`
   whitespace-no-wrap
   mr-4
   inline-block
@@ -97,57 +97,21 @@ const LinkSpan = tw.span`
   ml-2
 `
 
-const navData = [
-  {
-    route: '/',
-    exact: true,
-    label: 'HOME',
-    key: 0,
-    txtColor: 'text-green-500',
-    txtColorSC: 'rgb(34 197 94)',
-    d: 'M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6',
-  },
-  {
-    route: '/GamePage',
-    label: 'GAME',
-    key: 1,
-    txtColor: 'text-amber-900',
-    txtColorSC: 'rgb(120 53 15)',
-    d: 'M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z',
-  },
-  {
-    route: '/Settings',
-    label: 'SETTINGS',
-    key: 2,
-    txtColor: 'text-yellow-500',
-    txtColorSC: 'rgb(234 179 8)',
-    d: 'M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z',
-  },
-  {
-    route: '/TogglePage',
-    label: 'TOGGLEPAGE',
-    key: 3,
-    txtColor: 'text-red-500',
-    txtColorSC: 'rgb(239 68 68)',
-    d: 'M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z',
-  },
-]
+function Navbar1({ data, navOpen, scrolledFromTop, handleNav }) {
+  console.log('NavBar1.data: ', data)
 
-function Navbar1({ navOpen, scrolledFromTop, handleNav }) {
-  // const [navOpen, setNavOpen] = useState(false);
   const [currLink, setCurrLink] = useState('HOME')
 
   const clickHandler = (e) => {
-    console.log('Navbar1.clickHandler')
     setCurrLink(e.target.innerText)
   }
 
   return (
-    <>
+    <Fragment>
       <Nav>
         <NavContainer>
           <Logo>
-            <LogoContents href="#pablo">AntiScrabble</LogoContents>
+            <LogoContents href="">AntiScrabble</LogoContents>
 
             <Burger type="button" onClick={() => handleNav(!navOpen)}>
               <svg
@@ -168,8 +132,7 @@ function Navbar1({ navOpen, scrolledFromTop, handleNav }) {
             <ToolList onClick={clickHandler}>
               <BreakpointsSC />
 
-              {navData.map((item, index) => {
-                console.log('item: ', item)
+              {data.map((item, index) => {
                 return (
                   <li key={item.key} tabIndex={item.key}>
                     <NavLink
@@ -188,7 +151,7 @@ function Navbar1({ navOpen, scrolledFromTop, handleNav }) {
           </NavTools>
         </NavContainer>
       </Nav>
-    </>
+    </Fragment>
   )
 }
 

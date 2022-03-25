@@ -26,7 +26,7 @@ const SettingsPage = () => {
 
   //const [reorderCount, setReorderCount] = useState(0)
 
-  console.log('loading: ', loading)
+  // console.log('loading: ', loading)
 
   useEffect(() => {
     dispatch(fetchGameData())
