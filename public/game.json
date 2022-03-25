@@ -9,10 +9,12 @@
         "imageUrl":
           "https://robohash.org/4?set=set2&size=180x180",
         "imageCopy":"https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-        "gamesPlayed": 12345,
+        "gamesPlayed": 547,
         "title": "R2D2",
         "reviewCount": 34,
         "rating": 4,
+        "won": 487,
+        "place": "7th",
         "ratingDetail": [
           { "category": "Overall", "starNum": 5, "rating": 4, "reviews" : 49, "starColor": "text-teal-500" }
         ],
@@ -28,10 +30,12 @@
         "imageCopy":
           "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
         "imageUrl":"https://robohash.org/3?set=set2&size=180x180",
-        "gamesPlayed": 12345,
+        "gamesPlayed": 914,
         "title": "SkyNet",
         "reviewCount": 12,
         "rating": 3,
+        "won": 497,
+        "place": "9th",
         "ratingDetail": [
           { "category": "Overall", "starNum": 5, "rating": 5, "reviews" : 99, "starColor": "text-teal-500" }
         ],
@@ -47,10 +51,12 @@
         "imageUrl":"https://robohash.org/1?set=set2&size=180x180",
         "imageCopy":
           "https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80",
-        "gamesPlayed": 12345,
+        "gamesPlayed": 315,
         "title": "HAL9000",
         "reviewCount": 54,
         "rating": 5,
+        "won": 174,
+        "place": "11th",
         "ratingDetail": [
           { "category": "Overall", "starNum": 5, "rating": 5, "reviews" : 34, "starColor": "text-teal-500" }
         ],
@@ -66,10 +72,12 @@
         "imageUrl":"https://robohash.org/2?set=set2&size=180x180",
         "imageCopy":
           "https://images.unsplash.com/photo-1505691938895-1758d7feb511?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-        "gamesPlayed": 12345,
+        "gamesPlayed": 197,
         "title": "DeepThought",
         "reviewCount": 34,
         "rating": 4,
+        "won": 547,
+        "place": "4th",
         "ratingDetail": [
           { "category": "Overall", "starNum": 5, "rating": 5, "reviews" : 220, "starColor": "text-red-500" }
         ],
@@ -89,6 +97,8 @@
         "title": "TheWitch",
         "reviewCount": 34,
         "rating": 4,
+        "won": 999,
+        "place": "1st",
         "ratingDetail": [
           { "category": "Overall", "starNum": 5, "rating": 5, "reviews" : 220, "starColor": "text-red-500" }
         ],

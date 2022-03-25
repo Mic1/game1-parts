@@ -256,8 +256,8 @@ const Card = (props) => {
             <CardInfoTitle>{cardInfo.title}</CardInfoTitle>
             <CardInfoDetail>
               <h2>played: {formattedNumber(cardInfo.gamesPlayed)}</h2>
-              <h2>won: 986</h2>
-              <h2>place: 7th</h2>
+              <h2>won: {cardInfo.won}</h2>
+              <h2>place: {cardInfo.place}</h2>
             </CardInfoDetail>
           </CardInfo>
 
